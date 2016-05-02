@@ -156,6 +156,8 @@ struct ErrorMinimizersImpl
 		virtual T getOverlap() const;
 		virtual Matrix getCovariance() const;
 		Matrix estimateCovariance(const DataPoints& reading, const DataPoints& reference, const Matches& matches, const OutlierWeights& outlierWeights, const TransformationParameters& transformation);
+        Matrix estimateCovariance2D(const DataPoints& reading, const DataPoints& reference, const Matches& matches, const OutlierWeights& outlierWeights, const TransformationParameters& transformation);
+
 	};
 }; // ErrorMinimizersImpl
 
